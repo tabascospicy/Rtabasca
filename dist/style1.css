@@ -1,0 +1,55 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    /*display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #1b082b, #20082b, #24072b, #29062b, #2d052a, #390630, #460636, #53053b, #6d0747, #880851, #a40b59, #c11060);
+*/
+}
+#main{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+/*cover page*/
+.flex-cover{
+    color: aliceblue;
+    opacity: 0.9;
+    background-image: url("./resources/jonathan-francisca-1490967-unsplash.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.flex-cover > h1 {
+    font-size: 10vh;
+    text-shadow: 3px 6px 7px #000;
+}
+/* menu*/
+
+.navigation-content{
+    position: absolute;
+    font-size:2vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60vh;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.W-content{
+    height: 70vh;
+    position: relative;
+}
+.navigation-center > a {
+    padding: 2em;
+    color:#000;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+
