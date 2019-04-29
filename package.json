@@ -1,0 +1,35 @@
+{
+  "name": "reactwebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server -d --open",
+    "build": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react-app": "^3.1.2",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.4",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.8.4",
+    "react-spring": "^8.0.19",
+    "react-transition-group": "^4.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "devDependencies": {
+    "react-router-dom": "^5.0.0"
+  }
+}
