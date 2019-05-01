@@ -52,14 +52,14 @@ class Navigation extends Component {
                 <Route render={({ location, ...rest }) => (
                     <section id="navigation">
                         <div className="navigation-center wrapper">
-                            <Link to="/my_blog/" className="boton">About me</Link>
-                            <Link to="/my_blog/proyects/" className="" >Proyects</Link>
-                            <Link to="/my_blog/Curriculum/" className="">Curriculum</Link>
+                            <Link to="/my_blog" className="boton">About me</Link>
+                            <Link to="/my_blog/proyects" className="" >Proyects</Link>
+                            <Link to="/my_blog/Curriculum" className="">Curriculum</Link>
                         </div>
                         <div className="wrapper W-content">
                             <Transition native
                                 items={location}
-                                keys={location.pathname.split('/')[1]}
+                                keys={location.pathname.split('/')[2]}
                                 from={{transform: 'translateX(200px)', opacity: 0}}
                                 enter={{transform: 'translateX(0px)',opacity: 1}}
                                 leave={{transform: 'translateX(-200px)', opacity: 0}}
@@ -67,9 +67,9 @@ class Navigation extends Component {
                                 {(loc, state) => style => (
                                     <Switch location={state === 'update' ? location : loc}>
                                         {console.log(state)}
-                                        <Route exact path="/my_blog/" render={props => <About {...props} style={style} />} />
-                                        <Route path="/my_blog/proyects/" render={props => <Proyects {...props} style={style} />} />
-                                        <Route path="/my_blog/Curriculum/" render={props => <Curri {...props} style={style} />} />
+                                        <Route exact path="/my_blog" render={props => <About {...props} style={style} />} />
+                                        <Route path="/my_blog/proyects" render={props => <Proyects {...props} style={style} />} />
+                                        <Route path="/my_blog/Curriculum" render={props => <Curri {...props} style={style} />} />
                                     </Switch>
                                 )}
                             </Transition>
