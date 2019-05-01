@@ -59,7 +59,7 @@ class Navigation extends Component {
                         <div className="wrapper W-content">
                             <Transition native
                                 items={location}
-                                keys={location.pathname.split('/')[1]}
+                                keys={location}
                                 from={{transform: 'translateX(200px)', opacity: 0}}
                                 enter={{transform: 'translateX(0px)',pacity: 1}}
                                 leave={{transform: 'translateX(-200px)', opacity: 0}}
@@ -86,4 +86,4 @@ class Navigation extends Component {
 
 
 
-export default Navigation;
+export default Navigation;//.pathname.split('/')[1]
