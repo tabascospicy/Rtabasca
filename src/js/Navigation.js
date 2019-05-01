@@ -52,7 +52,7 @@ class Navigation extends Component {
                 <Route render={({ location, ...rest }) => (
                     <section id="navigation">
                         <div className="navigation-center wrapper">
-                            <Link to="/my_blog/" className="boton">About me</Link>
+                            <Link to="/my_blog" className="boton">About me</Link>
                             <Link to="/my_blog/proyects/" className="" >Proyects</Link>
                             <Link to="/my_blog/Curriculum/" className="">Curriculum</Link>
                         </div>
@@ -68,8 +68,8 @@ class Navigation extends Component {
                                     <Switch location={state === 'update' ? location : loc}>
                                         {console.log(state)}
                                         <Route exact path="/my_blog/" render={props => <About {...props} style={style} />} />
-                                        <Route path="/my_blog/proyects" render={props => <Proyects {...props} style={style} />} />
-                                        <Route path="/my_blog/Curriculum" render={props => <Curri {...props} style={style} />} />
+                                        <Route path="/my_blog/proyects/" render={props => <Proyects {...props} style={style} />} />
+                                        <Route path="/my_blog/Curriculum/" render={props => <Curri {...props} style={style} />} />
                                     </Switch>
                                 )}
                             </Transition>
