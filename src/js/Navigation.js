@@ -17,7 +17,7 @@ class About extends Component {
     render() {
         return (
             <animated.div className="navigation-content" style={this.props.style}>
-                <img id="yo" src="/my_blog/yo.jpg" width="190vx" height="160vh" ></img>
+                <img id="yo" src="yo.jpg" width="190vx" height="160vh" ></img>
                 <p className="text">¿Qué es Lorem Ipsum?
                     Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
                     Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
@@ -52,16 +52,16 @@ class Navigation extends Component {
                 <Route render={({ location, ...rest }) => (
                     <section id="navigation">
                         <div className="navigation-center wrapper">
-                            <Link to="/my_blog" className="boton">About me</Link>
+                            <Link to="/my_blog/" className="boton">About me</Link>
                             <Link to="/my_blog/proyects/" className="" >Proyects</Link>
                             <Link to="/my_blog/Curriculum/" className="">Curriculum</Link>
                         </div>
                         <div className="wrapper W-content">
                             <Transition native
                                 items={location}
-                                keys={location}
+                                keys={location.pathname.split('/')[1]}
                                 from={{transform: 'translateX(200px)', opacity: 0}}
-                                enter={{transform: 'translateX(0px)',pacity: 1}}
+                                enter={{transform: 'translateX(0px)',opacity: 1}}
                                 leave={{transform: 'translateX(-200px)', opacity: 0}}
                             >
                                 {(loc, state) => style => (
@@ -86,4 +86,4 @@ class Navigation extends Component {
 
 
 
-export default Navigation;//.pathname.split('/')[1]
+export default Navigation;//
