@@ -5,7 +5,7 @@ class Proyects extends Component {
 
     render() {
         return (
-            <animated.div className="navigation-content"  style={this.props.style}>
+            <animated.div className="navigation-content" style={this.props.style}>
                 <h1>Proyectos</h1>
             </animated.div>
         )
@@ -41,9 +41,26 @@ class Curri extends Component {
         )
     }
 }
-
+class BookMark extends Component{
+    render(){
+        return(
+            <div className="bookmark">
+            </div>
+        )
+    }
+}
 class Navigation extends Component {
-    componentDidMount(){
+    componentDidMount() {
+      let botones =  document.getElementsByClassName("boton");
+      console.log(botones[0]);
+      
+      /* botones[0].addEventListener("click", function(e){
+        e.preventDefault();
+    }) botones.forEach(element => {
+            element.addEventListener("click", function(e){
+                e.preventDefault();
+            })
+        });*/
     }
     render() {
         return (
@@ -51,22 +68,39 @@ class Navigation extends Component {
             <Router>
                 <Route render={({ location, ...rest }) => (
                     <section id="navigation">
-                        <div className="navigation-center wrapper">
-                            <Link to="/my_blog" className="boton">About me</Link>
-                            <Link to="/my_blog/proyects" className="" >Proyects</Link>
-                            <Link to="/my_blog/Curriculum" className="">Curriculum</Link>
+                        <div className=" wrapper">
+                            <div className="navigation-center">
+                                <div className="navigation-links">
+                                    <Link to="/my_blog" className="boton">About me</Link>
+                                    <div className="index"> 
+                                       <Route exact path="/my_blog" render={props => <BookMark  />} />
+                                    </div>
+                                </div>
+                                <div className="navigation-links">
+                                    <Link to="/my_blog/proyects" className="boton" >Proyects</Link>
+                                    <div className="index">
+                                          <Route path="/my_blog/proyects" render={props => <BookMark  />} />
+                                     </div>
+                                </div>
+                                <div className="navigation-links">
+                                    <Link to="/my_blog/Curriculum" className="boton">Curriculum</Link>
+                                    <div className="index">
+                                      <Route path="/my_blog/Curriculum" render={props => <BookMark />} />
+                                     </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div className="wrapper W-content">
                             <Transition native
                                 items={location}
                                 keys={location.pathname.split('/')[2]}
-                                from={{transform: 'translateX(200px)', opacity: 0}}
-                                enter={{transform: 'translateX(0px)',opacity: 1}}
-                                leave={{transform: 'translateX(-200px)', opacity: 0}}
+                                from={{ transform: 'translateX(200px)', opacity: 0 }}
+                                enter={{ transform: 'translateX(0px)', opacity: 1 }}
+                                leave={{ transform: 'translateX(-200px)', opacity: 0 }}
                             >
                                 {(loc, state) => style => (
                                     <Switch location={state === 'update' ? location : loc}>
-                                        {console.log(state)}
                                         <Route exact path="/my_blog" render={props => <About {...props} style={style} />} />
                                         <Route path="/my_blog/proyects" render={props => <Proyects {...props} style={style} />} />
                                         <Route path="/my_blog/Curriculum" render={props => <Curri {...props} style={style} />} />

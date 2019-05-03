@@ -31,15 +31,58 @@ body{
     text-shadow: 3px 6px 7px #000;
 }
 /* menu*/
+.navigation-center{
+    display:flex;
+    flex-direction: row;
+}
+/*link boxes*/
+.navigation-links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navigation-links > a {
+    padding: 1em 3em;
+    color:#000;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+a:hover+.index {
+    background: #000;
+    width: 7vw;
+}
+.index:hover{
+   
+}
+/*link index .navigation-links>*/
+.index{
+    width:1vw;
+    height: 0.5vh;
+    background: transparent;
+    transition: 1s;
+    border-radius: 0.5em;
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
 
+/* pincipal content*/
 .navigation-content{
     position: absolute;
-    font-size:2vh;
     display:flex;
     align-items: center;
     justify-content: center;
     max-width: 60vh;
     width: 100%;
+    flex-wrap: wrap;
+}
+.bookmark{
+    position:absolute;
+    width: 5vw;
+    height: 0.5vh;
+    background: #000;
+    border-radius: 0.5em;
 }
 
 .wrapper{
@@ -52,10 +95,7 @@ body{
     height: 70vh;
     position: relative;
 }
-.navigation-center > a {
-    padding: 2em;
-    color:#000;
-    text-decoration: none;
-    font-size: 2.5vh;
-}
+
+/*links index*/
+
 
