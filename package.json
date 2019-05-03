@@ -8,8 +8,12 @@
     "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://tabascospicy.github.io/my_blog/"
+  },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
@@ -19,13 +23,19 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
     "babel-preset-react-app": "^3.1.2",
-    "html-webpack-plugin": "^3.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-spring": "^8.0.19",
+    "react-router-dom": "^5.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
-    "react-router-dom": "^5.0.0"
+    "webpack-tinypng-compress": "^1.0.1"
   }
 }

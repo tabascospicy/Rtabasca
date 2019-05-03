@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import { Transition, animated } from 'react-spring/renderprops';
-
 class Proyects extends Component {
 
     render() {
@@ -44,7 +43,8 @@ class Curri extends Component {
 }
 
 class Navigation extends Component {
-
+    componentDidMount(){
+    }
     render() {
         return (
 
