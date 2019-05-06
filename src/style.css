@@ -53,7 +53,7 @@ a:hover+.index {
     width: 7vw;
 }
 .index:hover{
-   
+   width: 3px;
 }
 /*link index .navigation-links>*/
 .index{
