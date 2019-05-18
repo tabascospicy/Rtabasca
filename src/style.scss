@@ -6,6 +6,7 @@ body{
     background-image: linear-gradient(to bottom, #1b082b, #20082b, #24072b, #29062b, #2d052a, #390630, #460636, #53053b, #6d0747, #880851, #a40b59, #c11060);
 */
 }
+$main-color:aliceblue;
 #main{
     width: 100%;
     display:flex;
@@ -19,7 +20,7 @@ body{
 }
 /*cover page*/
 .flex-cover{
-    color: aliceblue;
+    color: $main-color;
     opacity: 0.9;
     background-image: url("./resources/jonathan-francisca-1490967-unsplash.jpg");
     background-size:cover;
@@ -28,7 +29,7 @@ body{
 }
 .flex-cover > h1 {
     font-size: 10vh;
-    text-shadow: 3px 6px 7px #000;
+    text-shadow: 3px 6px 7px $main-color;
 }
 /* menu*/
 .navigation-center{
@@ -44,12 +45,12 @@ body{
 }
 .navigation-links > a {
     padding: 1em 3em;
-    color:#000;
+    color:$main-color;
     text-decoration: none;
     font-size: 2.5vh;
 }
 a:hover+.index {
-    background: #000;
+    background: $main-color;
     width: 7vw;
 }
 .index:hover{
@@ -81,7 +82,7 @@ a:hover+.index {
     position:absolute;
     width: 5vw;
     height: 0.5vh;
-    background: #000;
+    background: $main-color;
     border-radius: 0.5em;
 }
 

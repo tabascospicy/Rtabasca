@@ -21,14 +21,14 @@ body{
 .flex-cover{
     color: aliceblue;
     opacity: 0.9;
-    background-image: url("./resources/jonathan-francisca-1490967-unsplash.jpg");
+    background-image: url(82abca60b0e1830070a7244e963592df.jpg);
     background-size:cover;
     background-attachment: fixed;
     height: 80vh;
 }
 .flex-cover > h1 {
     font-size: 10vh;
-    text-shadow: 3px 6px 7px rgb(247, 244, 244);
+    text-shadow: 3px 6px 7px #000;
 }
 /* menu*/
 .navigation-center{
@@ -44,12 +44,12 @@ body{
 }
 .navigation-links > a {
     padding: 1em 3em;
-    color:rgb(255, 242, 242);
+    color:#000;
     text-decoration: none;
     font-size: 2.5vh;
 }
 a:hover+.index {
-    background: rgb(243, 239, 239);
+    background: #000;
     width: 7vw;
 }
 .index:hover{
@@ -81,7 +81,7 @@ a:hover+.index {
     position:absolute;
     width: 5vw;
     height: 0.5vh;
-    background: rgb(247, 247, 247);
+    background: #000;
     border-radius: 0.5em;
 }
 
@@ -97,3 +97,6 @@ a:hover+.index {
 }
 
 /*links index*/
+
+
+
