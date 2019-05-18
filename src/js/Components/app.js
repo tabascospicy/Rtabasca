@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navigation from "./Navigation";
 import CoverPage from "./CoverPage";
 
 
@@ -10,7 +9,6 @@ class App extends Component {
         return (
             <section id="main">
                 <CoverPage/>
-                  <Navigation/>
              </section>
         )
     }
