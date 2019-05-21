@@ -6,17 +6,18 @@ class About extends Component {
     render() {
         return (
             <animated.div className="navigation-content" style={this.props.style}>
-                <img id="yo" src="yo.jpg" width="190vx" height="160vh" ></img>
-                <p className="text">¿Qué es Lorem Ipsum?
-                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-                    cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó
-                    una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                    No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos,
-                    quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset",
-                    las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker,
-                    el cual incluye versiones de Lorem Ipsum.
+                <div className="About">
+                    <img className="yo" src="yo.jpg" width="300px" height="300px" ></img>
+                </div>
+                <div className="About text">
+                    <p className="text">
+                        Venezolano estudiante de ingieneria en sistemas
+                        dedicado al desarrollo de paginas WEB con excelentes UX,UI,
+                        dedicado a technologias Front End CSS,React,BootsTrap,Javascript
+                        especializado en BackEnd PhP,mysql,laravel
+                        Abierto a oportunidades para aumentar la experiencia y crecer profesionalmente
                     </p>
+                </div>
             </animated.div>
         )
     }

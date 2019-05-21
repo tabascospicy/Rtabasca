@@ -5,7 +5,7 @@ class Home extends Component {
 
     render() {
         return (
-            <animated.div className="navigation-content" style={this.props.style}>
+            <animated.div className="navigation-content name" style={this.props.style}>
                 <h1>Rafael Tabasca</h1>
             </animated.div>
         )

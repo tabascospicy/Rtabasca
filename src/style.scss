@@ -1,102 +1,235 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-    /*display:flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, #1b082b, #20082b, #24072b, #29062b, #2d052a, #390630, #460636, #53053b, #6d0747, #880851, #a40b59, #c11060);
-*/
-}
 $main-color:aliceblue;
-#main{
-    width: 100%;
-    display:flex;
+$shadow-color:rgb(0, 0, 0);
+$complete:100%;
+$black:#0a0a0d;
+$blue:#064973;
+$meat:#a6615b;
+$sutil:#bf8a7e;
+$blanco:#ebf1f2;
+$transparent:#c6ced300;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    width: $complete;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #ebf1f2, #afc6ce, #779bae, #437290, #064973);
+    background-repeat: no-repeat;
+    height: $complete;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    .App {
+        display: flex;
+        max-width: 1500px;
+        max-height: 900px;
+        width: $complete;
+    }
+
+}
+
+#main {
+    width: $complete;
+    display: flex;
     flex-direction: column;
 }
-.moon{
-  
-        width: 100%;
-        display:flex;
-        flex-direction: column;
+
+.moon {
+
+    width: $complete;
+    display: flex;
+    flex-direction: column;
 }
+
+.wrapper {
+    width: $complete;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navigation-center {
+        display: flex;
+        flex-direction: row;
+
+        .navigation-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &>a {
+                padding: 1em 3em;
+                color: $main-color;
+                text-decoration: none;
+                font-size: 2.5vh;
+
+                &:hover+.index {
+                    background: $main-color;
+                    width: 7vw;
+                }
+            }
+            &>.index {
+                width: 1vw;
+                height: 0.5vh;
+                background: transparent;
+                transition: 1s;
+                border-radius: 0.5em;
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                &:hover {
+                    width: 3px;
+                }
+                &>.bookmark {
+                    position: absolute;
+                    width: 5vw;
+                    height: 0.5vh;
+                    background: $main-color;
+                    border-radius: 0.5em;
+                }
+            }
+        }
+    }
+}
+
+
+
+
 /*cover page*/
-.flex-cover{
+.flex-cover {
     color: $main-color;
     opacity: 0.9;
     background-image: url("./resources/jonathan-francisca-1490967-unsplash.jpg");
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     height: 80vh;
+    h1 {
+        font-size: 10vh;
+        text-shadow: 3px 6px 7px $shadow-color;
+    }
 }
-.flex-cover > h1 {
-    font-size: 10vh;
-    text-shadow: 3px 6px 7px $main-color;
-}
+
 /* menu*/
-.navigation-center{
-    display:flex;
-    flex-direction: row;
-}
+
 /*link boxes*/
-.navigation-links{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.navigation-links > a {
-    padding: 1em 3em;
-    color:$main-color;
-    text-decoration: none;
-    font-size: 2.5vh;
-}
-a:hover+.index {
-    background: $main-color;
-    width: 7vw;
-}
-.index:hover{
-   width: 3px;
-}
+
+
+
 /*link index .navigation-links>*/
-.index{
-    width:1vw;
-    height: 0.5vh;
-    background: transparent;
-    transition: 1s;
-    border-radius: 0.5em;
-    position:relative;
-    display: flex;
-    justify-content: center;
-}
+
 
 /* pincipal content*/
-.navigation-content{
-    position: absolute;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 60vh;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.bookmark{
-    position:absolute;
-    width: 5vw;
-    height: 0.5vh;
-    background: $main-color;
-    border-radius: 0.5em;
-}
 
-.wrapper{
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.W-content{
+
+.W-content {
     height: 70vh;
     position: relative;
+
+    &>.navigation-content {
+        background: $blanco;
+        box-shadow: 7px 6px 8px 7px $black;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        //  max-width: 80vh;
+        width: $complete;
+        &>.About {
+            padding: 2em;
+            color: $black;
+
+            &>.yo {
+                border-radius: 150px;
+            }
+        }
+
+    }
+    &>.navigation-contact{
+        background: $blanco;
+        box-shadow: 7px 6px 8px 7px $black;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1em;
+        &>.contact >a{
+            padding:1em 0em;
+            color:$blue;
+            margin:1em;
+        }
+    }
+    &>.name {
+        background: $transparent !important;
+        box-shadow: none !important;
+    }
 }
 
-/*links index*/
+/*links footer*/
+.footer {
+    height: 40vh;
+    background: $blanco;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    &>a {
+        margin:2em;
+    }
+}
+
+@media screen and (max-width: 729px) {
+
+.navigation-center{
+       height: 60px;
+       width: 100%;
+       position: fixed;
+       white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        webkit-overflow-scrolling:touch;
+        margin-top: -4.8%;
+    } 
+   div> a:hover{
+       background-color: #bbbbbb;
+    }
+    .wrapper { 
+        margin:0px;
+    }
+    .W-content {
+        height: 30rem;
+        width: 90vw;
+        &>.navigation-content {
+            margin-top:60px;
+            margin-bottom:60px;
+            flex-direction: column;
+            box-shadow:none;
+            width: 90vw;
+            &>.About {
+                padding:1em;
+                &>.yo {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 75px;
+                }
+            }
+    
+        }
+        &>.navigation-contact{
+           
+            &>.contact >a{
+               
+            }
+        }
+        &>.name {
+            background: $transparent !important;
+            box-shadow: none !important;
+        }
+    }
+
+}
 

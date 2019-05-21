@@ -38,7 +38,7 @@ class Navigation extends Component {
                                     </div>
                                 </div>
                                 <div className="navigation-links">
-                                    <Link to="/my_blog/Curriculum" className="boton">Curriculum</Link>
+                                    <Link to="/my_blog/Curriculum" className="boton">Contact</Link>
                                     <div className="index">
                                         <Route path="/my_blog/Curriculum" render={props => <BookMark />} />
                                     </div>

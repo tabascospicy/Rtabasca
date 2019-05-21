@@ -6,8 +6,13 @@ class Curri extends Component {
 
     render() {
         return (
-            <animated.div className="navigation-content" style={this.props.style}>
-                <h1>Curriculum</h1>
+            <animated.div className="navigation-contact" style={this.props.style}>
+                <h1>Contact</h1>
+                <div className="contact">
+                <a href="https://www.facebook.com/rafael.tabascarodriguez "><i className="fab fa-facebook-square fa-3x"></i></a>
+              <a href="https://www.instagram.com/tabasco_spicy/"><i className="fab fa-instagram fa-3x"></i></a>
+              <a href="https://github.com/tabascospicy"><i className="fab fa-github fa-3x"></i></a>
+              </div>
             </animated.div>
         )
     }
