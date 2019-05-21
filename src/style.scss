@@ -183,7 +183,9 @@ body {
 }
 
 @media screen and (max-width: 729px) {
-
+.final::-webkit-scrollbar{
+    display:none;
+}
 .navigation-center{
        height: 60px;
        width: 100%;
@@ -192,7 +194,7 @@ body {
         overflow-x: auto;
         overflow-y: hidden;
         webkit-overflow-scrolling:touch;
-        margin-top: -4.8%;
+        margin-top: -0.2%;
     } 
    div> a:hover{
        background-color: #bbbbbb;
