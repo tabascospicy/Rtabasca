@@ -17,7 +17,6 @@ class Navigation extends Component {
             <Router>
                 <Route render={({ location, ...rest }) => (
                     <section id="navigation">
-                        <div className=" wrapper">
                             <div className="navigation-center">
                                 <div className="navigation-links">
                                     <Link to="/my_blog" className="boton">Home</Link>
@@ -44,8 +43,6 @@ class Navigation extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
                         <div className="wrapper W-content">
                             <Transition native
                                 items={location}
