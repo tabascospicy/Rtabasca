@@ -10,7 +10,7 @@ class App extends Component {
             <section id="main">
                 <CoverPage/>
                 <Footer/>
-             </section>
+                </section>
         )
     }
 }

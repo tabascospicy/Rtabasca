@@ -16,7 +16,7 @@ class Navigation extends Component {
 
             <Router>
                 <Route render={({ location, ...rest }) => (
-                    <section id="navigation">
+                    <section id="navigation" class="flex-cover">
                             <div className="navigation-center">
                                 <div className="navigation-links">
                                     <Link to="/my_blog" className="boton">Home</Link>

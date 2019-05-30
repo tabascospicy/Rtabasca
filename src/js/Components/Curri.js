@@ -6,7 +6,7 @@ class Curri extends Component {
 
     render() {
         return (
-            <animated.div className="navigation-contact" style={this.props.style}>
+            <animated.div className="navigation navigation-contact wrapper" style={this.props.style}>
                 <h1>Contact</h1>
                 <div className="contact">
                 <a href="https://www.facebook.com/rafael.tabascarodriguez "><i className="fab fa-facebook-square fa-3x"></i></a>

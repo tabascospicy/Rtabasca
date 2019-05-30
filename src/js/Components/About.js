@@ -5,7 +5,7 @@ class About extends Component {
 
     render() {
         return (
-            <animated.div className="navigation-content" style={this.props.style}>
+            <animated.div className=" navigation navigation-content wrapper" style={this.props.style}>
                 <div className="About">
                     <img className="yo" src="yo.jpg" width="300px" height="300px" ></img>
                 </div>

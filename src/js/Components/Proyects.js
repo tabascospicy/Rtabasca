@@ -4,7 +4,7 @@ class Proyects extends Component {
 
     render() {
         return (
-            <animated.div className="navigation-content" style={this.props.style}>
+            <animated.div className="navigation navigation-content wrapper" style={this.props.style}>
                 <h1>Proyectos</h1>
             </animated.div>
         )

@@ -8,6 +8,10 @@ $sutil:#bf8a7e;
 $blanco:#ebf1f2;
 $transparent:#c6ced300;
 
+html,body{height: 100%;width: 100%;margin: 0;}
+*, *:before, *:after{-webkit-box-sizing: inherit;box-sizing: inherit;}
+html{-webkit-box-sizing: border-box;box-sizing: border-box;}
+div{display:block;}
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -20,30 +24,25 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
-    .App {
-        display: flex;
+    & >.App {
         max-width: 1500px;
         max-height: 900px;
         width: $complete;
+        height:$complete;
+        display: flex;
+          flex-direction: column;
     }
 
 }
 
-#main {
-    width: $complete;
-    display: flex;
-    flex-direction: column;
-}
 
 .moon {
-
     width: $complete;
     display: flex;
     flex-direction: column;
 }
 
-.wrapper {
-    
+.wrapper { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,12 +51,13 @@ body {
         display: flex;
         flex-direction: row;
         width: $complete;
-        .navigation-links {
+        align-items: center;
+        justify-content: center;
+       &> .navigation-links {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             &>a {
                 padding: 1em 3em;
                 color: $main-color;
@@ -126,37 +126,25 @@ body {
 .W-content {
     height: 70vh;
     position: relative;
-
     &>.navigation-content {
-        background: $blanco;
-        box-shadow: 7px 6px 8px 7px $black;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: row;
-        //  max-width: 80vh;
-        width: $complete;
         &>.About {
             padding: 2em;
             color: $black;
-
             &>.yo {
                 border-radius: 150px;
             }
         }
-
     }
-    &>.navigation-contact{
+    &>.navigation{
         background: $blanco;
         box-shadow: 7px 6px 8px 7px $black;
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        width: 100vh;
         padding: 1em;
+    }
+    &>.navigation-contact{
+        flex-direction: column;
         &>.contact >a{
             padding:1em 0em;
             color:$blue;
