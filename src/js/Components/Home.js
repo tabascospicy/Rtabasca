@@ -5,9 +5,9 @@ class Home extends Component {
 
     render() {
         return (
-            <animated.div className="navigation navigation-content name wrapper" style={this.props.style}>
+            <div className="name wrapper">
                 <h1>Rafael Tabasca</h1>
-            </animated.div>
+            </div>
         )
     }
 }

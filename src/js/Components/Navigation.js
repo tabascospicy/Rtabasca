@@ -3,47 +3,38 @@ import { Transition, animated } from 'react-spring/renderprops';
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 
 import BookMark from "./BookMark";
-import Home from "./Home";
 import Proyects from "./Proyects";
 import Curri from "./Curri";
 import About from "./About";
 
 
 class Navigation extends Component {
-
     render() {
         return (
-
-            <Router>
-                <Route render={({ location, ...rest }) => (
-                    <section id="navigation" class="flex-cover">
-                            <div className="navigation-center">
-                                <div className="navigation-links">
-                                    <Link to="/my_blog" className="boton">Home</Link>
-                                    <div className="index">
+            <Router onUpdate={() => {document.getElementById('navigation').focus(); console.log("actualiza")}}>
+                <Route  render={({ location, ...rest }) => (
+                    <section className="content wrapper">
+                            <div className="navigation-center wrapper">
+                                <div className="navigation-links wrapper">
+                                    <Link to="/my_blog" className="boton">About me</Link>
+                                    <div className="index wrapper">
                                         <Route exact path="/my_blog" render={props => <BookMark />} />
                                     </div>
                                 </div>
-                                <div className="navigation-links">
-                                    <Link to="/my_blog/About" className="boton">About me</Link>
-                                    <div className="index">
-                                        <Route exact path="/my_blog/About" render={props => <BookMark />} />
-                                    </div>
-                                </div>
-                                <div className="navigation-links">
+                                <div className="navigation-links wrapper">
                                     <Link to="/my_blog/proyects" className="boton" >Proyects</Link>
-                                    <div className="index">
+                                    <div className="index wrapper">
                                         <Route path="/my_blog/proyects" render={props => <BookMark />} />
                                     </div>
                                 </div>
-                                <div className="navigation-links">
+                                <div className="navigation-links wrapper">
                                     <Link to="/my_blog/Curriculum" className="boton">Contact</Link>
-                                    <div className="index">
+                                    <div className="index  wrapper">
                                         <Route path="/my_blog/Curriculum" render={props => <BookMark />} />
                                     </div>
                                 </div>
                             </div>
-                        <div className="wrapper W-content">
+                        <div id="navigation"className="wrapper W-content">
                             <Transition native
                                 items={location}
                                 keys={location.pathname.split('/')[2]}
@@ -53,8 +44,7 @@ class Navigation extends Component {
                             >
                                 {(loc, state) => style => (
                                     <Switch location={state === 'update' ? location : loc}>
-                                        <Route exact path="/my_blog" render={props => <Home {...props} style={style} />} />
-                                        <Route exact path="/my_blog/About" render={props => <About {...props} style={style} />} />
+                                        <Route exact path="/my_blog" render={props => <About {...props} style={style} />} />
                                         <Route path="/my_blog/proyects" render={props => <Proyects {...props} style={style} />} />
                                         <Route path="/my_blog/Curriculum" render={props => <Curri {...props} style={style} />} />
                                     </Switch>
@@ -62,7 +52,7 @@ class Navigation extends Component {
                             </Transition>
                         </div>
                     </section>
-                )}
+                )} 
                 />
 
             </Router>

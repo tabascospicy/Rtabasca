@@ -11,10 +11,9 @@ class About extends Component {
                 </div>
                 <div className="About text">
                     <p className="text">
-                        Venezolano estudiante de ingieneria en sistemas
-                        dedicado al desarrollo de paginas WEB con excelentes UX,UI,
-                        dedicado a technologias Front End CSS,React,BootsTrap,Javascript
-                        especializado en BackEnd PhP,mysql,laravel
+                        estudiante de ingieneria en sistemas dedicado al desarrollo
+                        de paginas WEB con excelentes UX,UI,con technologias Front End CSS,React
+                        BootsTrap,Javascript especializado en BackEnd PhP,mysql,laravel
                         Abierto a oportunidades para aumentar la experiencia y crecer profesionalmente
                     </p>
                 </div>
