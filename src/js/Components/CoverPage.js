@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Navigation from "./Navigation";
+import Home from "./Home";
 
 class CoverPage extends Component {
     render() {
-        return (        
-              <Navigation/>
+        return (
+            <div className="flex-cover wrapper">        
+              <Home/>
+            </div>
         )
     }
 }
