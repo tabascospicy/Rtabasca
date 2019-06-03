@@ -2,12 +2,13 @@ $main-color:aliceblue;
 $shadow-color:rgb(0, 0, 0);
 $complete:100%;
 $black:#0a0a0d;
-$blue:#064973;
+$blue:#06497398;
 $meat:#a6615b;
 $sutil:#bf8a7e;
 $blanco:#ebf1f2;
 $transparent:#c6ced300;
 $buenBlanco:#ebf1f2;
+
 html,
 body {
     height: 100%;
@@ -40,6 +41,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
+
     &>.App {
         max-width: 1500px;
         max-height: 900px;
@@ -50,61 +52,71 @@ body {
     }
 
 }
-@-webkit-keyframes typing {
-    from {
-        width: 0;
-    }
-}
-@-webkit-keyframes blink-caret {
-    50% {
-        border-color: transparent;
-    }
-}
+
 /*cover page*/
 .flex-cover {
     color: $main-color;
     opacity: 0.9;
-    
+
     height: 90vh;
+
     h1 {
-        color:$buenBlanco;
+        color: $buenBlanco;
         font-size: 10vh;
-        width: 58vw;
         text-shadow: 3px 6px 7px $shadow-color;
-        border-right: .1em solid $buenBlanco;
-        margin: 0;
+        border-right: .1em solid $transparent;
+        width:0;
+        transition-delay: 0s;
+        transition-dutarion:0.2s;
+        margin: 0;  
+        animation:border;
+        animation-duration:0.2s;
         white-space: nowrap;
         overflow: hidden;
-        -webkit-animation: typing 7s steps(21, end),blink-caret .5s step-end infinite alternate;
     }
-    &>.flex-image{
-        display:block;
-        position:absolute;
+
+    &>.flex-image {
+        display: block;
+        position: absolute;
         background-image: url("./resources/jonathan-francisca-1490967-unsplash.jpg");
         background-size: cover;
         -webkit-filter: blur(2px);
         background-attachment: fixed;
         width: 100%;
-        height:90vh;
-        z-index:0;
+        height: 90vh;
+        z-index: 0;
     }
-    .name{
+    .name {
         flex-wrap: wrap;
-        z-index:999;
-        &>.part{
-            
-            height:10vh;
+        z-index: 999;
+         @media(max-width: 1200px){
+                flex-direction:column;
+                .part{
+                    width:40vw!important;
+                    &>.letter{
+                        width:20vw!important;
+                    }
+                }
+            }
+        &>.part {
+            height: 10vh;
             width: 32vw;
-            &>.letter{
-                color:transparent;
-                
-                height:10vh;
-             //   border-left:2px solid $transparent;
+           
+            &>.letter {
+                color: transparent;
+                height: 10vh;
+                width:5vw;
+                @for $i from 1 through 13 {
+                    .letra-#{$i}{
+                        transition-delay:$i * (1s / 8);
+                        animation-delay:$i * (1s / 8);
+                    }
+              }
             }
         }
     }
-} 
-
+}
+@-webkit-keyframes border{from{border-color:$buenBlanco}}
 /*.moon {
     width: $complete;
     display: flex;
@@ -116,52 +128,62 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* menu*/
-.content{
+.content {
     width: 100%;
-    flex-direction:column;
+    flex-direction: column;
     background: $black;
 }
+
 .navigation-center {
     flex-direction: row;
     width: $complete;
-/*link index .navigation-links>*/
+
+    /*link index .navigation-links>*/
     &>.navigation-links {
         flex-direction: column;
-        &>a{
+
+        &>a {
             padding: 2vh 7vw;
             color: $buenBlanco;
-            opacity:0.8;
+            opacity: 0.8;
             text-decoration: none;
             font-size: 2.5vh;
-            transition:all 500ms;
+            transition: all 500ms;
+
             &:hover+.index {
                 background: $buenBlanco;
                 width: 8vw;
             }
-            &:hover{
-               box-shadow: inset 0px 0px 15px 0px #2d2d2f;
+
+            &:hover {
+                box-shadow: inset 0px 0px 15px 0px #2d2d2f;
             }
-            &:focus{
+
+            &:focus {
                 box-shadow: inset 0px 0px 15px 0px #2d2d2f;
             }
         }
-        &>.index{
+
+        &>.index {
             width: 1vw;
-            transition:all 0.2s;
+            transition: all 0.2s;
             height: 0.2vh;
             background: transparent;
             position: relative;
+
             &:hover {
                 width: 3px;
             }
+
             &>.bookmark {
                 position: absolute;
                 width: 5vw;
                 height: 0.2vh;
-                
+
                 background: $buenBlanco;
-                opcity:0.8;
+                opcity: 0.8;
                 //border-radius: 0.5em;
             }
         }
@@ -174,24 +196,31 @@ body {
     height: 90vh;
     width: 100%;
     white-space: nowrap;
-    overflow:auto;
+    overflow: auto;
     position: relative;
     background: #2d2d2f;
+
     &>.navigation {
         position: absolute;
         width: 100vh;
         padding: 1em;
         font-family: 'Roboto', sans-serif;
+
         &-contact {
             flex-direction: column;
+            color: #fdfdfd73;
+
             &>.contact>a {
                 padding: 1em 0em;
                 color: $blue;
                 margin: 1em;
             }
         }
-        &-content{
+
+        &-content {
             flex-direction: row;
+            color: #fdfdfd73;
+
             &>.About {
                 padding: 2em;
                 flex-wrap: wrap;
@@ -199,26 +228,28 @@ body {
                 height: 100%;
                 white-space: normal;
                 display: flex;
-                color: #0a0a0dd6;
                 letter-spacing: 1.5px;
                 text-shadow: 2px 2px 13px #46463d52;
+
                 &>.yo {
                     border-radius: 150px;
                 }
             }
         }
     }
+
     &>.name {
         background: $transparent !important;
         box-shadow: none !important;
     }
 }
+
 /*links footer*/
 .footer {
     height: 40vh;
     background: $blanco;
+
     &>a {
         margin: 2em;
     }
 }
-

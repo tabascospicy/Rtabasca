@@ -14,7 +14,11 @@ class Navigation extends Component {
             <Router onUpdate={() => {document.getElementById('navigation').focus(); console.log("actualiza")}}>
                 <Route  render={({ location, ...rest }) => (
                     <section className="content wrapper">
+                       
                             <div className="navigation-center wrapper">
+                                 <div className="adorno"></div>
+                                    <div className="adorno"></div>
+                                    <div className="adorno"></div>
                                 <div className="navigation-links wrapper">
                                     <Link to="/my_blog" className="boton">About me</Link>
                                     <div className="index wrapper">
@@ -33,6 +37,9 @@ class Navigation extends Component {
                                         <Route path="/my_blog/Curriculum" render={props => <BookMark />} />
                                     </div>
                                 </div>
+                                <div className="adorno"></div>
+                                    <div className="adorno"></div>
+                                    <div className="adorno"></div>
                             </div>
                         <div id="navigation"className="wrapper W-content">
                             <Transition native
