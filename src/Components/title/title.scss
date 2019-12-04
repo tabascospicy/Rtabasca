@@ -1,0 +1,134 @@
+.Title {
+  // height: 34vh;
+  width: 92%;
+  box-shadow: -1px 2px 3px 0px #00000018;
+  margin: 3% 0 3% 0;
+  background: $color3;
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  
+  @media only screen and (max-width: 600px) {
+   flex-wrap: wrap;
+  }
+  .img-container {
+    width: 150px;
+   height:150px;
+    position: relative;
+    margin: 3%;
+  
+    .img {
+      border-radius: 50%;
+      background-image: url("./../../imgs/yo.jpg");
+      width: 150px;
+      box-shadow: 0px 3px 5px 1px #0000042f;
+      height: 150px;
+      background-position: center;
+      position: absolute;
+      background-size: cover;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  .social {
+    flex-grow: 1;
+  }
+  .description {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 600px) {
+        justify-content: center;
+         align-items: center;
+       }
+    h3 {
+      font-size: 1.7rem;
+      font-weight: 400;
+      opacity: 0.8;
+      letter-spacing: 0.2px;
+      margin-bottom: 0.7vh;
+      margin-top: 0;
+    }
+    p {
+      margin: 0;
+      opacity: 0.6;
+    }
+    span {
+      color: $blue;
+    }
+    button {
+      width: 15vh;
+      color: white;
+      background: #52dc90;
+      padding: 1.7vh 1vw;
+      border: none;
+      border-radius: 0.27rem;
+      margin-top: 10px;
+    }
+  }
+  .social {
+    flex-direction: column;
+    position:relative;
+    &:before{
+      content:"";
+      width:1px;
+      height:80%;
+      background: rgba(0, 0, 0, 0.158);
+      position:Absolute;
+      left:-5px;
+      @media only screen and (max-width: 600px) {
+        width:80%;
+        height:1px;
+        top:0;
+        left:10%;
+        margin:10px;
+     }
+    }
+    padding: 10px;
+  
+    &-content {
+      display: flex;
+      h4 {
+        margin: 0;
+        margin-bottom: 1.5vh;
+        opacity: 0.8;
+      }
+      span {
+        margin-bottom: 1.5vh;
+      }
+      .layout {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      .items {
+      }
+      .text {
+        .location {
+          font-size: 0.7rem;
+        }
+        #avaible {
+          padding: 4px;
+          font-size: 0.7rem;
+          background-color: #52dc90;
+          border-radius: 1rem;
+          color: white;
+        }
+      }
+    }
+    &-Links {
+      padding: 10px;
+      width: 50%;
+      justify-content: space-between;
+    }
+  }
+} /*
+
+width: 28%;
+    padding-top: 28%;
+    position: relative;
+    margin: 7%;
+*/

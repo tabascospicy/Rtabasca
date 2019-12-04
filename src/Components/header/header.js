@@ -1,9 +1,10 @@
 import React from 'react';
+import './header.scss';
 function Header() {
   return (
         <div className="Header center">
             <span>RTabasca</span>
-            <p>otro</p>
+            <p>Aqui</p>
             <p>Curriculum</p>
         </div>
   );

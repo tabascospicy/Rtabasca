@@ -1,0 +1,38 @@
+.Top{
+    justify-content: flex-start!important;
+    width: 92%;
+    position:relative;
+    &::before{
+        content:"";
+        width: 100%;
+        position:absolute;
+        z-index:1;
+        bottom:0;
+        height: 1px;
+        background-color: gray;
+    }
+    span{
+        font-weight: 600;
+        padding:1% 2%;
+        color: black;
+        opacity: 0.6;
+        position:relative;
+        letter-spacing: 0.02rem;
+        text-decoration: none;
+        &:focus{
+            color:$icons;
+            border:none;
+            &:after{
+                content:"";
+                display: flex;
+                position:absolute;
+                bottom:0;
+                left:0;
+                z-index:3;
+                width: 100%;
+                height: 3px;
+                background-color: $icons;
+            }
+        }
+    }
+}
