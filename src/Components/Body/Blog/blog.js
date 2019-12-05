@@ -1,10 +1,11 @@
 import React from 'react';
+import {animated} from 'react-spring/renderprops';
 import "./blog.scss";
-function Blog() {
-  return (
-       <div className="Blog center">
+function Blog (props) {
+    return (
+       <animated.div style={{...props.style}} className="Blog center">
            <h1>Blog</h1>
-       </div>
+       </animated.div>
   );
 }
 
