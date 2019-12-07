@@ -1,9 +1,33 @@
-.Blog{
-    opacity:1;
-    transform: translateX(0);
-    position:absolute;
-    width: 50%;
-    height: 40vh;
-    margin-top:30px;
-    background-color: $color3;
+.Blog {
+  opacity: 1;
+  transform: translateX(0);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 30px;
+  background-color: $color3;
+  @media only screen and (max-width: 640px) {
+    width: 90%;
+    &-text {
+      padding: 12% 9%;
+    }
+  }
+  &-text {
+    position: relative;
+    width: 100%;
+    padding: 10% 5% 3%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    white-space: normal;
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        opacity: 0.9;
+        letter-spacing: 0.02px;
+        margin-bottom: 0.7vh;
+        margin-top: 0;
+      }
+  }
 }

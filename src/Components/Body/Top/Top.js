@@ -4,7 +4,7 @@ import "./Top.scss";
 function Top() {
   return (
      <div className="Top center">
-         <Link to="/Profile">Profile</Link>
+         <Link to="/">Profile</Link>
          <Link to="/Graphics">Graphics</Link>
      </div>
   );

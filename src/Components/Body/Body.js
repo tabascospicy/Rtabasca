@@ -25,7 +25,7 @@ class Body extends Component {
            <Switch location={state === 'update' ? location : loc}>
               <Route
                 exact
-                path="/Profile"
+                path="/"
                 render={props => <Blog {...props} style={style} />}
               />
               <Route
