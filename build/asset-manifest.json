@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.556b4a4b.chunk.css",
+    "main.js": "/static/js/main.d29a8ec2.chunk.js",
+    "main.js.map": "/static/js/main.d29a8ec2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.32007f3c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.32007f3c.js.map",
+    "static/js/2.6f92995c.chunk.js": "/static/js/2.6f92995c.chunk.js",
+    "static/js/2.6f92995c.chunk.js.map": "/static/js/2.6f92995c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6045d3fc694a3f119f995aafb1980ef4.js": "/precache-manifest.6045d3fc694a3f119f995aafb1980ef4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.556b4a4b.chunk.css.map": "/static/css/main.556b4a4b.chunk.css.map",
+    "static/media/App.scss": "/static/media/Solway-Regular.03148331.ttf",
+    "static/media/title.scss": "/static/media/yo.8210cd59.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32007f3c.js",
+    "static/js/2.6f92995c.chunk.js",
+    "static/css/main.556b4a4b.chunk.css",
+    "static/js/main.d29a8ec2.chunk.js"
+  ]
+}
