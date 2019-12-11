@@ -25,11 +25,11 @@ class Body extends Component {
            <Switch location={state === 'update' ? location : loc}>
               <Route
                 exact
-                path="/"
+                path="/Rtabasca/"
                 render={props => <Blog {...props} style={style} />}
               />
               <Route
-                path="/Graphics"
+                path="/Rtabasca/Graphics"
                 render={props => <Graphics {...props} style={style} />}
               />
            </Switch>
