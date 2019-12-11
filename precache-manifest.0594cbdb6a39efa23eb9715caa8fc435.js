@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1382c81724a49964ea4d4bd5feb919b",
+    "revision": "d4785a02672d4927a31c28f1c4f215e1",
     "url": "/Rtabasca/index.html"
   },
   {
-    "revision": "a307666385e819abc397",
+    "revision": "80e0b490d92c02711fcf",
     "url": "/Rtabasca/static/css/main.9fccebe7.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Rtabasca/static/js/2.6f92995c.chunk.js"
   },
   {
-    "revision": "a307666385e819abc397",
-    "url": "/Rtabasca/static/js/main.3d420fd8.chunk.js"
+    "revision": "80e0b490d92c02711fcf",
+    "url": "/Rtabasca/static/js/main.63708173.chunk.js"
   },
   {
     "revision": "f98d1224d3823c035c82",
