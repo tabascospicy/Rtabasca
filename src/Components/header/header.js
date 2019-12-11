@@ -6,7 +6,7 @@ function Header() {
     <div className="Header center">
       <span>RTabasca</span>
       <List/>
-      <p>Curriculum</p>
+      <p> Prove</p>
     </div>
   );
 }

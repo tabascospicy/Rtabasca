@@ -6,20 +6,20 @@
         opacity:0.8;
         padding:5px 10px;
         border-radius:0.8rem;
-        background-color: $secondary;
+        background-color: var(--secondary);
         border:solid 1px rgba(128, 128, 128, 0.288);
         margin:5px;
         margin: 5px;
         cursor:pointer;
         transition:all ease 0.2s;
         &:hover{
-            background: $strong;
-            color:$secondary;
+            background: var(--strong);
+            color:#fff;
         }
         &:focus{
             transform:scale(1.2);
-            background: $strong;
-            color:$secondary;
+            background: var(--strong);
+            color:#fff;
         }
     }
 }

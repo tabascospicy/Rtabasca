@@ -4,11 +4,12 @@
     svg{
          color:gray;
     }
-  
 }
 .blu{ 
     cursor: pointer;
     svg{
-        color:$icons;
+        path{
+            color:var(--icons)!important;
+        }
     }
 }

@@ -1,12 +1,12 @@
+
+// content box styles this box contains everything 
 .content {
-    background-color: #f8f9fd;
+    background-color: var(--secondary);
     width: 87vw;
     margin-top:3%;
     border-radius: 0.6em;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
   }
+  //cellphone styles
   @media only screen and (max-width: 640px) {
    .content{
      margin-top:0;

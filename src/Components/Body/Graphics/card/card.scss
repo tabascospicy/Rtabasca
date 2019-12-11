@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-.card:hover {
-}
+
 .box {
   display: flex;
   align-content: space-around;
@@ -21,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $color3;
+  background: var(--color3);
   svg {
     position: relative;
     width: 100%;
@@ -42,7 +41,7 @@
   }
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 35px var(--card-shadow);
     .card-text {
       color: var(--contrary);
     }
@@ -62,7 +61,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: $card;
+    background: var(--card);
     pointer-events: none;
     z-index: 1;
     width: 50%;
@@ -74,8 +73,8 @@
   height: 70px;
   white-space: nowrap;
   border-radius: 50%;
-  box-shadow: inset 0 0 50px $blue-shadow;
-  background-color: $color3;
+  box-shadow: inset 0 0 50px var(--blue-shadow);
+  background-color: var(--color3);
   z-index: 1000;
   .number {
     position: absolute;

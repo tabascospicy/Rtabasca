@@ -9,7 +9,7 @@ import Instagram from "./icons/instagram";
 import Linkedin from "./icons/linkedin";
 function Title() {
   return (
-    <div className="Title center">
+    <div className="Title center center-around">
         <div className="img-container center">
           <div className="img"></div>
         </div>
@@ -22,13 +22,13 @@ function Title() {
 
       <section className="social">
         <section className="social-content">
-          <div className="items layout">
+          <div className="items layout center center-start center-column">
             <h4>Avaibility:</h4>
             <h4>Age:</h4>
             <h4>Location:</h4>
             <h4>Years Experience:</h4>
           </div>
-          <div className="text layout">
+          <div className="text layout center center-start center-column">
             <span>
               Full Time(40hr/wk)<span id="avaible">Avaible!</span>
             </span>

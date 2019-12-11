@@ -20,7 +20,7 @@
         letter-spacing: 0.02rem;
         text-decoration: none;
         &:focus{
-            color:$icons;
+            color:var(--icons);
             border:none;
             &:after{
                 content:"";
@@ -31,7 +31,7 @@
                 z-index:3;
                 width: 100%;
                 height: 3px;
-                background-color: $icons;
+                background-color: var(--icons);
             }
         }
     }

@@ -24,6 +24,7 @@ body,
 *:before,
 *:after {
   color:var(--contrary);
+  transition:0.2s;
   font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -40,6 +41,15 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  //single propesties of determinates elements for layout porpuses 
+  &-start{
+    justify-content: flex-start;
+  }
+  //
+  &-around{
+    justify-content: space-around;
+  }
+  &-column{
+    flex-direction: column;
+  }
 }
-
-

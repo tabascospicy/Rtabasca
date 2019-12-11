@@ -2,12 +2,13 @@
   opacity: 1;
   transform: translateX(0);
   position: absolute;
-  box-shadow: -1px 2px 3px 0px #00000018;
+  box-shadow: -1px 2px 3px 0px var(--shadow);
   display: flex;
   flex-direction: column;
+  transition:0.2s!important;
   width: 70%;
   margin-top: 30px;
-  background-color: $color3;
+  background-color: var(--color3);
   @media only screen and (max-width: 640px) {
     width: 90%;
     &-text {
