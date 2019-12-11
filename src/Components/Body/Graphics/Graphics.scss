@@ -2,8 +2,27 @@
     opacity:1;
     position:absolute;
     transform: translateX(0);
-    width: 50%;
-    height: 40vh;
+    width: 80%;
+    display:flex;
+    justify-content: flex-start;
+    padding:3% 5%;
+    flex-direction: column;
     margin-top:30px;
     background-color: $color3;
+    h2{
+        font-size: 1.3rem;
+        font-weight: 400;
+        opacity: 0.9;
+        letter-spacing: 0.02px;
+        margin-bottom: 0.7vh;
+        margin-top: 0;
+    }
+    .collection{   
+         flex-wrap: wrap;
+        display:flex;
+        align-items: center;
+        justify-content: space-around!important;
+        height: 30vh;
+        width: 100%;
+    }
 }

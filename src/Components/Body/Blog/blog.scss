@@ -2,6 +2,7 @@
   opacity: 1;
   transform: translateX(0);
   position: absolute;
+  box-shadow: -1px 2px 3px 0px #00000018;
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -16,11 +17,14 @@
   &-text {
     position: relative;
     width: 100%;
-    padding: 10% 5% 3%;
+    padding:3% 5%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     white-space: normal;
+    &:first-of-type{
+           padding: 7% 5% 3%;
+    }
     h2 {
         font-size: 1.3rem;
         font-weight: 400;

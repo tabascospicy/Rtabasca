@@ -1,0 +1,11 @@
+.Languajes{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    .L-item{
+        svg{
+            height: 1em;
+            width: 1em;
+            margin:0.4rem;        }
+    }
+}

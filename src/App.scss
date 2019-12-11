@@ -1,3 +1,4 @@
+@import "./themes/varscss.scss";
 /*        fonts            */
 @font-face {
   font-family: "Roboto";
@@ -7,6 +8,7 @@
     font-family: "Solway";
     src: url("./fonts/Solway-Regular.ttf");
 }
+
 $color : #0c08082e;
 html,
 body,
@@ -21,6 +23,7 @@ body,
 *,
 *:before,
 *:after {
+  color:var(--contrary);
   font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
