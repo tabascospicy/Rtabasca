@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Rtabasca/static/css/main.9fccebe7.chunk.css",
+    "main.js": "/Rtabasca/static/js/main.3d420fd8.chunk.js",
+    "main.js.map": "/Rtabasca/static/js/main.3d420fd8.chunk.js.map",
+    "runtime-main.js": "/Rtabasca/static/js/runtime-main.7fae8b3e.js",
+    "runtime-main.js.map": "/Rtabasca/static/js/runtime-main.7fae8b3e.js.map",
+    "static/js/2.6f92995c.chunk.js": "/Rtabasca/static/js/2.6f92995c.chunk.js",
+    "static/js/2.6f92995c.chunk.js.map": "/Rtabasca/static/js/2.6f92995c.chunk.js.map",
+    "index.html": "/Rtabasca/index.html",
+    "precache-manifest.c7054b372e42e5d40487d23772da8d2c.js": "/Rtabasca/precache-manifest.c7054b372e42e5d40487d23772da8d2c.js",
+    "service-worker.js": "/Rtabasca/service-worker.js",
+    "static/css/main.9fccebe7.chunk.css.map": "/Rtabasca/static/css/main.9fccebe7.chunk.css.map",
+    "static/media/App.scss": "/Rtabasca/static/media/Solway-Regular.03148331.ttf",
+    "static/media/title.scss": "/Rtabasca/static/media/yo.8210cd59.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7fae8b3e.js",
+    "static/js/2.6f92995c.chunk.js",
+    "static/css/main.9fccebe7.chunk.css",
+    "static/js/main.3d420fd8.chunk.js"
+  ]
+}
